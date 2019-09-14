@@ -1,0 +1,10 @@
+@import '../ReactMagneticBoard.scss';
+
+.undo-clear {
+  .buttons {
+  }
+
+  .border {
+    @include border;
+  }
+}
