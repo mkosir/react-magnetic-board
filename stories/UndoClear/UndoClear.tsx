@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import ReactMagneticBoard from '../../src';
+import MagneticBoard from '../../src';
 import './UndoClear.scss';
 
 const magnetSVG =
@@ -27,7 +27,7 @@ const UndoClear = () => {
         <button onClick={onClear}>Clear</button>
       </div>
       <div className="border">
-        <ReactMagneticBoard
+        <MagneticBoard
           magnet={{
             path: magnetSVG,
             scale: 0.25,

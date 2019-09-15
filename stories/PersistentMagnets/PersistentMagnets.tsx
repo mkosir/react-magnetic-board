@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import ReactMagneticBoard from '../../src';
+import MagneticBoard from '../../src';
 import './PersistentMagnets.scss';
 
 const magnetSVG =
@@ -22,7 +22,7 @@ const PersistentMagnets = () => {
 
   return (
     <div className="border">
-      <ReactMagneticBoard
+      <MagneticBoard
         magnet={{
           path: magnetSVG,
           scale: 0.25,
