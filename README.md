@@ -114,6 +114,12 @@ npm start
 
 **Start coding!** 🎉
 
+## Roadmap
+
+- Move magnet(s)
+- Resize magnet
+- Tests
+
 [npm-url]: https://www.npmjs.com/package/react-magnetic-board
 [npm-badge]: https://img.shields.io/npm/v/react-magnetic-board.svg
 [size-badge]: https://img.shields.io/bundlephobia/minzip/react-magnetic-board.svg
