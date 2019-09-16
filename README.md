@@ -4,7 +4,7 @@
 [![npm bundle size][size-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_React magnetic board component using HTML5 canvas with zero dependencies 🧲_
+_Light, zero dependencies magnetic board component using HTML5 canvas 🧲_
 
 ## Demo
 
