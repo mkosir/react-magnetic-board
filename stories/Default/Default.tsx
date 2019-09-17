@@ -17,7 +17,7 @@ const Default = () => (
     }}
     width={600}
     height={500}
-    style={{ border: '6px solid #3f3f3f', borderRadius: '10px' }}
+    style={{ border: '10px solid #eceff3', borderRadius: '10px' }}
   />
 );
 
