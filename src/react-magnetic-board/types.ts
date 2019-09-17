@@ -50,6 +50,7 @@ export interface Props {
 export type Magnet = {
   path: string;
   scale?: number;
+  rotate?: number;
   offsetX?: number;
   offsetY?: number;
   fillStyle?: string;

@@ -29,17 +29,14 @@ const PersistentMagnets = () => {
   };
 
   return (
-    <div className="undo-clear">
-      <div className="buttons">
-        <button onClick={onClear}>Clear Board and Local Storage</button>
-      </div>
+    <div className="persistent-magnets">
       <div className="border">
         <MagneticBoard
           magnet={{
             path: magnetSVG,
-            scale: 0.25,
+            scale: 0.15,
             offsetX: 290,
-            offsetY: 180,
+            offsetY: 160,
             fillStyle: '#d93030',
             shadowColor: '#bf2626',
             shadowBlur: 35,
@@ -48,6 +45,9 @@ const PersistentMagnets = () => {
           onMagnetChange={setMagnets}
           onClear={clearTrigger}
         />
+      </div>
+      <div className="buttons">
+        <button onClick={onClear}>Clear Board and Local Storage</button>
       </div>
     </div>
   );

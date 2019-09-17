@@ -14,6 +14,7 @@ function drawMagnet(ctx: CanvasRenderingContext2D, canvasRect: ClientRect, magne
   magnetCheck.shadowColor = magnet.shadowColor ? magnet.shadowColor : '';
   magnetCheck.shadowBlur = magnet.shadowBlur ? magnet.shadowBlur : 0;
   magnetCheck.scale = magnet.scale ? magnet.scale : 1;
+  magnetCheck.rotate = magnet.rotate ? magnet.rotate : 0;
   magnetCheck.offsetX = magnet.offsetX ? magnet.offsetX : 0;
   magnetCheck.offsetY = magnet.offsetY ? magnet.offsetY : 0;
 
@@ -26,6 +27,7 @@ function drawMagnet(ctx: CanvasRenderingContext2D, canvasRect: ClientRect, magne
     magnetCheck.x! / magnetCheck.scale - magnetCheck.offsetX,
     magnetCheck.y! / magnetCheck.scale - magnetCheck.offsetY,
   );
+  ctx.rotate((magnetCheck.rotate * Math.PI) / 180);
   const magnetPath = new Path2D(magnetCheck.path);
   ctx.fill(magnetPath);
   ctx.restore();

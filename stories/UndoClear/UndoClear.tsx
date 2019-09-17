@@ -21,10 +21,6 @@ const UndoClear = () => {
 
   return (
     <div className="undo-clear">
-      <div className="buttons">
-        <button onClick={onUndo}>Undo</button>
-        <button onClick={onClear}>Clear</button>
-      </div>
       <div className="border">
         <MagneticBoard
           magnet={{
@@ -39,6 +35,10 @@ const UndoClear = () => {
           onUndo={undoTrigger}
           onClear={clearTrigger}
         />
+      </div>
+      <div className="buttons">
+        <button onClick={onUndo}>Undo</button>
+        <button onClick={onClear}>Clear</button>
       </div>
     </div>
   );
