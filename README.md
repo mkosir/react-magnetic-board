@@ -81,6 +81,9 @@ Initialize magnets.
 **onUndo**: _boolean_ ▶︎ `undefined`  
 Inverting 'onUndo' prop value triggers undo command.
 
+**onClear**: _boolean_ ▶︎ `undefined`  
+Inverting 'onClear' prop value clears the board.
+
 **onMagnetChange**: _Function_ => (**magnets**: _Magnet[]_)  
 Gets triggered when user changes magnet(s) on the component.
 
