@@ -37,7 +37,7 @@ const PersistentMagnets = () => {
             scale: 0.15,
             offsetX: 290,
             offsetY: 160,
-            fillStyle: '#d93030',
+            fillStyle: '#c02323',
             shadowColor: '#bf2626',
             shadowBlur: 35,
           }}

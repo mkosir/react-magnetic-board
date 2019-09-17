@@ -28,7 +28,7 @@ const UndoClear = () => {
             scale: 0.25,
             offsetX: 100,
             offsetY: 90,
-            fillStyle: '#d93030',
+            fillStyle: '#c02323',
             shadowColor: '#bf2626',
             shadowBlur: 5,
           }}
