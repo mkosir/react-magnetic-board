@@ -12,6 +12,7 @@ const ReactMagneticBoard: FC<Props> = ({
   width,
   height,
   className,
+  style,
   initMagnets,
   onMagnetChange,
   onUndo,
@@ -52,6 +53,7 @@ const ReactMagneticBoard: FC<Props> = ({
     <canvas
       ref={canvasRef}
       className={className}
+      style={style}
       width={width}
       height={height}
       onClick={addMagnet}

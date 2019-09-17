@@ -1,3 +1,5 @@
+import { CSSProperties } from 'react';
+
 export interface Props {
   /**
    * Magnet resource.
@@ -18,6 +20,11 @@ export interface Props {
    * Class name.
    */
   className?: string;
+
+  /**
+   * Style.
+   */
+  style?: CSSProperties;
 
   /**
    * Initialize magnets.

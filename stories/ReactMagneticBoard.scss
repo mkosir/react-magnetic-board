@@ -4,11 +4,3 @@
   margin-top: 10vh;
   font-family: Arial, sans-serif;
 }
-
-@mixin border {
-  // border: 50px solid #3f3f3f;
-  // border-radius: 20px;
-
-  border: 25px solid transparent;
-  border-image: url('../assets/border.png') 24 30 28 26 fill repeat;
-}
