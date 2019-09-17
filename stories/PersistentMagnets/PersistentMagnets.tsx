@@ -17,24 +17,38 @@ function useLocalStorage<T>(
   return [value, setValue];
 }
 
+const LS_KEY = 'react-magnetic-board';
+
 const PersistentMagnets = () => {
-  const [magnets, setMagnets] = useLocalStorage<any[]>('react-magnetic-board', []);
+  const [magnets, setMagnets] = useLocalStorage<any[]>(LS_KEY, []);
+  const [clearTrigger, setClear] = useState(false);
+
+  const onClear = () => {
+    localStorage.removeItem(LS_KEY);
+    setClear(clearTrig => !clearTrig);
+  };
 
   return (
-    <div className="border">
-      <MagneticBoard
-        magnet={{
-          path: magnetSVG,
-          scale: 0.25,
-          offsetX: 290,
-          offsetY: 180,
-          fillStyle: '#d93030',
-          shadowColor: '#bf2626',
-          shadowBlur: 35,
-        }}
-        initMagnets={magnets}
-        onMagnetChange={setMagnets}
-      />
+    <div className="undo-clear">
+      <div className="buttons">
+        <button onClick={onClear}>Clear Board and Local Storage</button>
+      </div>
+      <div className="border">
+        <MagneticBoard
+          magnet={{
+            path: magnetSVG,
+            scale: 0.25,
+            offsetX: 290,
+            offsetY: 180,
+            fillStyle: '#d93030',
+            shadowColor: '#bf2626',
+            shadowBlur: 35,
+          }}
+          initMagnets={magnets}
+          onMagnetChange={setMagnets}
+          onClear={clearTrigger}
+        />
+      </div>
     </div>
   );
 };
