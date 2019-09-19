@@ -122,7 +122,6 @@ npm start
 ## Roadmap
 
 - Move magnet(s)
-- Resize magnet
 - Add marker pens and eraser
 - Tests
 
