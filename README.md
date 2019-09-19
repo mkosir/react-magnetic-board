@@ -123,6 +123,7 @@ npm start
 
 - Move magnet(s)
 - Resize magnet
+- Add marker pens and eraser
 - Tests
 
 [npm-url]: https://www.npmjs.com/package/react-magnetic-board
