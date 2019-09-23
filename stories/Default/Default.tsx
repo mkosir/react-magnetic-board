@@ -8,15 +8,15 @@ const Default = () => (
   <MagneticBoard
     magnet={{
       path: circleMagnetSVG,
-      scale: 0.25,
-      offsetX: 100,
-      offsetY: 90,
+      scale: 0.2,
+      offsetX: 150,
+      offsetY: 120,
       fillStyle: '#c02323',
       shadowColor: '#bf2626',
       shadowBlur: 5,
     }}
-    width={600}
-    height={500}
+    width={500}
+    height={400}
     style={{ border: '10px solid #d8dce0', borderRadius: '10px' }}
   />
 );
