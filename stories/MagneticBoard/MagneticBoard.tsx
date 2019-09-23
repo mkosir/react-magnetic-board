@@ -19,14 +19,14 @@ const Default = () => {
         <MagneticBoard
           magnet={{
             path: circleMagnetSVG,
-            scale: 0.2,
+            scale: 0.15,
             offsetX: 100,
             offsetY: 90,
             fillStyle: magnetColor,
             shadowBlur: 5,
           }}
-          width={600}
-          height={500}
+          width={500}
+          height={400}
         />
       </div>
       <div className="magnet-selection">
@@ -34,7 +34,7 @@ const Default = () => {
           id="red"
           style={{
             backgroundColor: MagnetColors.RED,
-            padding: MagnetColors.RED === magnetColor ? '19px' : '16px',
+            padding: MagnetColors.RED === magnetColor ? '16px' : '13px',
           }}
           onClick={() => setMagnetColor(MagnetColors.RED)}
         />
@@ -42,7 +42,7 @@ const Default = () => {
           id="blue"
           style={{
             backgroundColor: MagnetColors.BLUE,
-            padding: MagnetColors.BLUE === magnetColor ? '19px' : '16px',
+            padding: MagnetColors.BLUE === magnetColor ? '16px' : '13px',
           }}
           onClick={() => setMagnetColor(MagnetColors.BLUE)}
         />
@@ -50,7 +50,7 @@ const Default = () => {
           id="yellow"
           style={{
             backgroundColor: MagnetColors.YELLOW,
-            padding: MagnetColors.YELLOW === magnetColor ? '19px' : '16px',
+            padding: MagnetColors.YELLOW === magnetColor ? '16px' : '13px',
           }}
           onClick={() => setMagnetColor(MagnetColors.YELLOW)}
         />
