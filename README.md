@@ -1,4 +1,4 @@
-# react-magnetic-board
+# React Magnetic Board
 
 [![npm version][npm-badge]][npm-url]
 [![npm bundle size][size-badge]][npm-url]
