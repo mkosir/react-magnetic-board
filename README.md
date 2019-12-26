@@ -10,7 +10,7 @@ _Light, zero dependencies magnetic board component using HTML5 canvas 🧲_
 
 ## Demo
 
-**[Live demo](https://mkosir.github.io/react-magnetic-board)**
+**[Live demo & Code examples](https://mkosir.github.io/react-magnetic-board)** created with [StoryTab 📑](https://github.com/mkosir/story-tab)
 
 ## Install
 
