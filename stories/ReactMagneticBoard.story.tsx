@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Default from './Default/Default';
-import UndoClear from './UndoClear/UndoClear';
-import PersistentMagnets from './PersistentMagnets/PersistentMagnets';
-import MagneticBoard from './MagneticBoard/MagneticBoard';
+import Default from './Default/_Default';
+import UndoClear from './UndoClear/_UndoClear';
+import PersistentMagnets from './PersistentMagnets/_PersistentMagnets';
+import MagneticBoard from './MagneticBoard/_MagneticBoard';
 import './ReactMagneticBoard.scss';
 
 const stories = storiesOf('React Magnetic Board', module);

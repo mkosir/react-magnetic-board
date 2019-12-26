@@ -1,4 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './UndoClear.storytab';
+
+const code = `import React, { useState } from 'react';
 
 import MagneticBoard from '../../src';
 import './UndoClear.scss';
@@ -45,3 +50,29 @@ const UndoClear = () => {
 };
 
 export default UndoClear;
+`;
+
+const style = `.undo-clear {
+  .border {
+    border: 10px solid #d8dce0;
+    border-radius: 10px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+
+    button {
+      font-size: 16px;
+      margin: 5px;
+    }
+  }
+}
+`;
+
+const _UndoClear = () => (
+  <StoryTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+    <Demo />
+  </StoryTabTemplate>
+);
+
+export default _UndoClear;

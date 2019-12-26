@@ -1,4 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+import StoryTabTemplate from 'story-tab-template-react';
+import Demo from './MagneticBoard.storytab';
+
+const code = `import React, { useState } from 'react';
 
 import MagneticBoard from '../../src';
 import './MagneticBoard.scss';
@@ -60,3 +65,50 @@ const Default = () => {
 };
 
 export default Default;
+`;
+
+const style = `.magnetic-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .border {
+    border: 35px solid transparent;
+    border-image: url('./assets/border.png') 24 30 28 26 fill repeat;
+  }
+
+  .magnet-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    button {
+      border: none;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+`;
+
+const _MagneticBoard = () => (
+  <StoryTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+    <Demo />
+  </StoryTabTemplate>
+);
+
+export default _MagneticBoard;
