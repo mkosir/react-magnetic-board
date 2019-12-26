@@ -10,11 +10,6 @@ addParameters({
      * @type {Boolean}
      */
     showPanel: false,
-    /**
-     * where to show the addon panel
-     * @type {('bottom'|'right')}
-     */
-    panelPosition: 'bottom',
   },
 });
 
