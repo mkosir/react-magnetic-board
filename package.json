@@ -49,8 +49,8 @@
     "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-typescript2": "^0.24.0",
     "sass-loader": "^8.0.0",
-    "story-tab": "^1.0.14",
-    "story-tab-template-react": "^1.0.8",
+    "story-tab": "^1.0.15",
+    "story-tab-react": "^1.0.9",
     "tslint": "^5.19.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
@@ -62,7 +62,7 @@
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
+    "{src,stories}/**/*": [
       "prettier --config .prettierrc --write",
       "git add"
     ]
