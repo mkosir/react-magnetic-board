@@ -15,9 +15,10 @@
     "build:watch": "rollup -c -w",
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts{,x}'",
     "lint-prettier": "prettier --config .prettierrc -l  src/**/*.ts{,x}",
-    "prettier": "prettier --config .prettierrc --write src/**/*.ts{,x}",
+    "prettier": "prettier --config .prettierrc --write {src,stories}/**/*.ts{,x}",
     "storybook": "start-storybook -p 9009 -s public --quiet",
     "storybook:build": "build-storybook -c .storybook -o build_storybook --quiet",
+    "storytab": "storytab generate react --prefix=_",
     "validate": "npm run lint && npm run lint-prettier && npm run build"
   },
   "devDependencies": {
@@ -48,6 +49,8 @@
     "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-typescript2": "^0.24.0",
     "sass-loader": "^8.0.0",
+    "story-tab": "^1.0.14",
+    "story-tab-template-react": "^1.0.8",
     "tslint": "^5.19.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
