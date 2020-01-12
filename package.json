@@ -1,6 +1,6 @@
 {
   "name": "react-magnetic-board",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React magnetic board component using HTML5 canvas.",
   "main": "./dist/react-magnetic-board.umd.js",
   "module": "./dist/react-magnetic-board.es5.js",
