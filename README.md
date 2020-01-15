@@ -3,7 +3,7 @@
 [![npm version][npm-badge]][npm-url]
 [![npm bundle size][size-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
-[![prettier][prettier-badge]][prettier-url]
+[![storybook][storybook-badge]][storybook-url]
 
 _Light, zero dependencies magnetic board component using HTML5 canvas 🧲_
 
@@ -131,5 +131,5 @@ npm start
 [size-badge]: https://img.shields.io/bundlephobia/minzip/react-magnetic-board.svg
 [build-badge]: https://travis-ci.com/mkosir/react-magnetic-board.svg
 [build-url]: https://travis-ci.com/mkosir/react-magnetic-board
-[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-[prettier-url]: https://github.com/prettier/prettier
+[storybook-badge]: https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg
+[storybook-url]: https://github.com/storybookjs/storybook
