@@ -1,12 +1,12 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './UndoClear.storytab';
+import doctabTemplate from 'story-tab-react';
+import Demo from './UndoClear.doctab';
 
 const code = `import React, { useState } from 'react';
 
 import MagneticBoard from '../../src';
-import './UndoClear.storytab.scss';
+import './UndoClear.doctab.scss';
 
 const circleMagnetSVG = 'M 100, 100  m -75, 0  a 75,75 0 1,0 150,0  a 75,75 0 1,0 -150,0';
 
@@ -70,9 +70,9 @@ const style = `.undo-clear {
 `;
 
 const _UndoClear = () => (
-  <StoryTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+  <doctabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
     <Demo />
-  </StoryTabTemplate>
+  </doctabTemplate>
 );
 
 export default _UndoClear;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import StoryTabTemplate from 'story-tab-react';
-import Demo from './MagneticBoard.storytab';
+import doctabTemplate from 'story-tab-react';
+import Demo from './MagneticBoard.doctab';
 
 const code = `import React, { useState } from 'react';
 
 import MagneticBoard from '../../src';
-import './MagneticBoard.storytab.scss';
+import './MagneticBoard.doctab.scss';
 
 const circleMagnetSVG = 'M 100, 100  m -75, 0  a 75,75 0 1,0 150,0  a 75,75 0 1,0 -150,0';
 enum MagnetColors {
@@ -106,9 +106,9 @@ const style = `.magnetic-board {
 `;
 
 const _MagneticBoard = () => (
-  <StoryTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+  <doctabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
     <Demo />
-  </StoryTabTemplate>
+  </doctabTemplate>
 );
 
 export default _MagneticBoard;
