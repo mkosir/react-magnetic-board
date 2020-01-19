@@ -1,6 +1,6 @@
 import React from 'react';
 
-import doctabTemplate from 'story-tab-react';
+import DocTabTemplate from 'react-doc-tab-template';
 import Demo from './Default.doctab';
 
 const code = `import React from 'react';
@@ -30,9 +30,9 @@ export default Default;
 `;
 
 const _Default = () => (
-  <doctabTemplate code={code} codeExt="tsx">
+  <DocTabTemplate code={code} codeExt="tsx">
     <Demo />
-  </doctabTemplate>
+  </DocTabTemplate>
 );
 
 export default _Default;

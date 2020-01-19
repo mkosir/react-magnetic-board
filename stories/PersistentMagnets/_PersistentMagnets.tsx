@@ -1,6 +1,6 @@
 import React from 'react';
 
-import doctabTemplate from 'story-tab-react';
+import DocTabTemplate from 'react-doc-tab-template';
 import Demo from './PersistentMagnets.doctab';
 
 const code = `import React, { useState, useEffect } from 'react';
@@ -79,9 +79,9 @@ const style = `.persistent-magnets {
 `;
 
 const _PersistentMagnets = () => (
-  <doctabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+  <DocTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
     <Demo />
-  </doctabTemplate>
+  </DocTabTemplate>
 );
 
 export default _PersistentMagnets;

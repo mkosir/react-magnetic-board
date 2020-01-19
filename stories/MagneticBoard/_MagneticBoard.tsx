@@ -1,6 +1,6 @@
 import React from 'react';
 
-import doctabTemplate from 'story-tab-react';
+import DocTabTemplate from 'react-doc-tab-template';
 import Demo from './MagneticBoard.doctab';
 
 const code = `import React, { useState } from 'react';
@@ -106,9 +106,9 @@ const style = `.magnetic-board {
 `;
 
 const _MagneticBoard = () => (
-  <doctabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
+  <DocTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
     <Demo />
-  </doctabTemplate>
+  </DocTabTemplate>
 );
 
 export default _MagneticBoard;
