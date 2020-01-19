@@ -15,8 +15,8 @@ _Light, zero dependencies magnetic board component using HTML5 canvas 🧲_
 
 ## Install
 
-- npm `npm install react-magnetic-board`
-- yarn `yarn add react-magnetic-board`
+npm `npm install react-magnetic-board`
+yarn `yarn add react-magnetic-board`
 
 ## Example
 
