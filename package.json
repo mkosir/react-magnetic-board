@@ -1,6 +1,6 @@
 {
   "name": "react-magnetic-board",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React magnetic board component using HTML5 canvas.",
   "main": "./dist/react-magnetic-board.umd.js",
   "module": "./dist/react-magnetic-board.es5.js",
@@ -18,7 +18,7 @@
     "prettier": "prettier --config .prettierrc --write {src,stories}/**/*.ts{,x}",
     "storybook": "start-storybook -p 9009 -s public --quiet",
     "storybook:build": "build-storybook -c .storybook -o build_storybook --quiet",
-    "storytab": "storytab generate react --prefix=_",
+    "doctab": "doctab generate --prefix=_ && npm run prettier",
     "validate": "npm run lint && npm run lint-prettier && npm run build"
   },
   "devDependencies": {
