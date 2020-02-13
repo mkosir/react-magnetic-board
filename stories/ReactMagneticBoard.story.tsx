@@ -7,7 +7,7 @@ import PersistentMagnets from './PersistentMagnets/_PersistentMagnets';
 import MagneticBoard from './MagneticBoard/_MagneticBoard';
 import './ReactMagneticBoard.scss';
 
-const stories = storiesOf('React Magnetic Board', module);
+const stories = storiesOf('Examples', module);
 
 stories
   .add('Default', () => <Default />)
