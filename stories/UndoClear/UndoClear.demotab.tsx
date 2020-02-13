@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import MagneticBoard from '../../src';
-import './UndoClear.doctab.scss';
+import './UndoClear.demotab.scss';
 
 const circleMagnetSVG = 'M 100, 100  m -75, 0  a 75,75 0 1,0 150,0  a 75,75 0 1,0 -150,0';
 
